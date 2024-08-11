@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        table{
+            width: 450px;
+            height: 469px;
+            border-collapse: collapse;
+            background-color: rgb(247, 214, 214);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            
+        }
+
+        td{
+            border: 2px solid black;
+            text-align: center;
+            width: 50px;
+            font-weight: bold;
+        }
+    </style>
+   <table>
+    <tr>
+        <td colspan="6">a</td>
+        <!-- <td>b</td>
+        <td>c</td>
+        <td>d</td>
+        <td>f</td>
+        <td>g</td>-->
+        <td rowspan="6">h</td> 
+    </tr>
+
+    <tr>
+        <td rowspan="6">a</td>
+        <td colspan="4">b</td>
+        <td rowspan="4">c</td>
+        <!-- <td>d</td>
+        <td>f</td>
+        <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+
+    <tr>
+        <!-- <td>a</td> -->
+        <td rowspan="4">b</td>
+        <td colspan="2">c</td>
+        <td rowspan="2">d</td>
+        <!-- <td>f</td> -->
+        <!-- <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+
+    <tr>
+        <!-- <td>a</td> -->
+        <td rowspan="2">b</td>
+        <td>c</td>
+        <!-- <td>d</td> -->
+        <!-- <td>f</td> -->
+        <!-- <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+
+    <tr>
+        <!-- <td>a</td> -->
+        <td colspan="2">b</td>
+        <!-- <td>c</td> -->
+        <!-- <td>d</td> -->
+        <!-- <td>f</td> -->
+        <!-- <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+
+    <tr>
+        <!-- <td>a</td> -->
+        <td colspan="4">b</td>
+        <!-- <td>c</td>
+        <td>d</td>
+        <td>f</td> -->
+        <!-- <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+
+    <tr>
+        <!-- <td>a</td> -->
+        <td colspan="6">b</td>
+        <!-- <td>c</td>
+        <td>d</td>
+        <td>f</td>
+        <td>g</td> -->
+        <!-- <td>h</td> -->
+    </tr>
+   </table> 
+</body>
+</html>
