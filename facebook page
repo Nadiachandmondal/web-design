@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Log In or Sign Up</title>
+</head>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.header {
+    background-color: #3b5998;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-input {
+    margin-right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #dfe3ee;
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.left-section h2 {
+    font-size: 24px;
+    color: #4b4f56;
+    line-height: 1.5;
+}
+
+.left-section img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.right-section {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.right-section p {
+    color: #555;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.birthday {
+    margin: 10px 0;
+}
+
+.birthday select {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.birthday a {
+    color: #0078D7;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.gender {
+    margin: 10px 0;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-button:hover {
+    background-color: #36a420;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .new{
+        align-items: center;
+        color: #0078D7;
+        text-align: center;
+        
+    }
+
+    .image{
+        display: none;
+    }
+
+    .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .login-container {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .login-input {
+        width: calc(100% - 20px);
+        margin: 5px 0;
+        display: none;
+    }
+
+    #pass{
+        display: none;
+    }
+
+    .login-button {
+        width: 100%;
+        display: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* .left-section,
+    .right-section {
+        width: 100%;
+    } */
+
+    .left-section h2 {
+        /* text-align: center;
+        font-size: 20px; */
+        display: none;
+    }
+
+    .right-section {
+        width: 100%; /* Make right section full width */
+        box-shadow: none; /* Remove the shadow for a cleaner look */
+        padding: 0; /* Adjust padding if needed */
+    }
+
+    .right-section h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .new {
+        display: none;
+    }
+</style>
+
+<body>
+    <h1 class="new">FACEBOOK</h1>
+    <div class="header">
+        <div class="logo">facebook</div>
+        <div class="login-container">
+            <form>
+                <input type="text" placeholder="Email or Phone" class="login-input">
+                <input type="password" placeholder="Password" class="login-input">
+                <button type="submit" class="login-button">Log In</button>
+                <a href="#" class="forgot-password" id="pass">Forgotten password?</a>
+            </form>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="left-section">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+            <img class="image" src="connect-people.png" alt="Connected world">
+        </div>
+        <div class="right-section">
+            <h2>Create an account</h2>
+            <p>It's free and always will be.</p>
+            <form>
+                <input type="text" placeholder="First Name" class="input-box">
+                <input type="text" placeholder="Last Name" class="input-box">
+                <input type="text" placeholder="Mobile number or email address" class="input-box">
+                <input type="password" placeholder="New Password" class="input-box">
+                <div class="birthday">
+                    <label>Birthday</label><br>
+                    <select><option>1</option></select>
+                    <select><option>Jan</option></select>
+                    <select><option>2000</option></select>
+                    <a href="#">Why do I need to provide my birthday?</a>
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+                <button type="submit" class="signup-button">Create an account</button>
+            </form>
+            <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
+        </div>
+    </div>
+</body>
+</html>
